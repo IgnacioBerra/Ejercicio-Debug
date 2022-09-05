@@ -17,9 +17,9 @@ namespace WordsPhrases
         /// </summary>
         public static void Main()
         {
-            const string text1 = "text1";
-            const string text2 = "text2";
-            const string expected = "text1"+"text2";
+            const string text1 = " text1 ";
+            const string text2 = " text2 ";
+            const string expected = "text1 text2";
             Phrase phrase = new Phrase();
             Word word1 = new Word(text1);
             Word word2 = new Word(text2);

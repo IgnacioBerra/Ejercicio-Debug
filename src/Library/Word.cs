@@ -16,9 +16,13 @@ namespace WordsPhrases
         /// Crea una nueva palabra con el texto recibido como argumento.
         /// </summary>
         /// <param name="text">El texto de la palabra.</param>
+        /// 
+        
+
+        // Dentro del constructor Word, uso la función Trim() al text pasado como parametro. Borrando espacio en blanco. 
         public Word(string text)
         {
-            this.Text = text;
+            this.Text = text.Trim();
         }
 
         /// <summary>

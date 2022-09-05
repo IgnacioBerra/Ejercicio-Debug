@@ -51,17 +51,19 @@ namespace WordsPhrases
             StringBuilder phrase = new StringBuilder();
 
 
-            //El append que estaba dentro del foreach hacía agregar un espacio en blanco a las palabras. 
-            //Borré el append, y en el program junte ambos strings con un operador "+".
-            
+           
             foreach (Word word in this.words)
             {
+                phrase.Append(" ");
                 phrase.Append(word.Text);
             }
-
+            
+            
             string result = phrase.ToString();
 
-            // Remueve el primer espacio que se agrega siempre
+            //Se encarga de remover el primer espacio de result. De esta manera, da que ambos text son iguales. 
+            result = result.Trim();
+            
 
             return result;
         }
